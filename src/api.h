@@ -30,6 +30,7 @@
  *
  */
 
+//#define CONSOLE_BOT
 #ifndef __INCLUDE_NANCYBOT_H__
 #define __INCLUDE_NANCYBOT_H__
 
@@ -45,7 +46,7 @@
 #include <sstream>
 using namespace std;
 
-#include "nancy_bot/msgdata.h"
+#include "msgdata.h"
 #define TEACH_BOT
 class NancyBot
 {

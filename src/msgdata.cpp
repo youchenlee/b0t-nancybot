@@ -23,8 +23,8 @@
 #include <cstdio>
 #include <cerrno>
 
-#include "nancy_bot/msgdata.h"
-#include "nancy_bot/botutil.h"
+#include "msgdata.h"
+#include "botutil.h"
 #include "fileutil.h"
 
 extern int error;
