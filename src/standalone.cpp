@@ -13,16 +13,13 @@ main (int argc, char **argv)
 #ifdef ADV_BOT_DEBUG
     b->debug();
 #endif
-    char *input = new char[80];
-    string msg_in;
-    do
-    {
-	    cin.getline(input,80);
-	    cin.clear();
-	    msg_in = input;
+     for (std::string line; std::getline(std::cin, line);) {
+        if (line == "exit") {
+	    // cout << "bye bye" << endl;
+            break;
+        }
+	cout << b->askNancy (line) << endl;
     }
-    while (strncmp (input, "exit", 4) != 0 &&
-	   (cout << "Nancy: " << b->askNancy (msg_in) << endl));
     // ask_nancy return "PCManX-NancyBot" when initial error ( no config file found )
     delete b;
     return 0;

@@ -30,7 +30,7 @@
  *
  */
 
-//#define CONSOLE_BOT
+#define CONSOLE_BOT
 #ifndef __INCLUDE_NANCYBOT_H__
 #define __INCLUDE_NANCYBOT_H__
 
